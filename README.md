@@ -2,10 +2,13 @@
 
 ## Titanic: Machine Leaning from Disaster
 
-- titanic.py
-- titanic.ipynb
-- ./data/train.csv
-- ./data/test.csv
-- ./data/gender_submission.csv
-- ./data/submit.csv
-
+- titanic
+    - src
+        - titanic.py
+        - titanic.ipynb
+    - data
+        - train.csv
+        - test.csv
+        - gender_submission.csv
+    - output
+        - submit.csv

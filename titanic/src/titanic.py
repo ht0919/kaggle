@@ -4,8 +4,8 @@ import numpy as np
 
 #train = pd.read_csv("/kaggle/input/titanic/train.csv")
 #test = pd.read_csv("/kaggle/input/titanic/test.csv")
-train = pd.read_csv("./data/train.csv")
-test = pd.read_csv("./data/test.csv")
+train = pd.read_csv("../data/train.csv")
+test = pd.read_csv("../data/test.csv")
 
 # 前処理：欠損データの補完
 # 欠損データを中央値や最頻値で置き換える
@@ -43,4 +43,4 @@ my_prediction_forest = forest.predict(test_features)
 PassengerId = np.array(test["PassengerId"]).astype(int)
 my_solution_forest = pd.DataFrame(my_prediction_forest, PassengerId, columns=["Survived"])
 #my_solution_forest.to_csv("/kaggle/working/gender_submission.csv", index_label=["PassengerId"])
-my_solution_forest.to_csv("./data/submit.csv", index_label=["PassengerId"])
+my_solution_forest.to_csv("../output/submit.csv", index_label=["PassengerId"])
